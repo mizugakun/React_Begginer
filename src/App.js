@@ -33,6 +33,8 @@ import FRParentInput from './components/30_Forwarding Refs/FRParentInput';
 import PortalDemo from './components/31_Portals/PortalDemo';
 import ErrorHero from './components/32_Error Handling Phase Methods/ErrorHero';
 import ErrorBoundary from './components/32_Error Handling Phase Methods/ErrorBoundary';
+import ClickCount from './components/33_Higher Order Component/ClickCount';
+import HoverCount from './components/33_Higher Order Component/HoverCount';
 
 
 
@@ -113,13 +115,15 @@ function App() {
         {/* <PortalDemo /> */}
         
         { /* not a good idea to hide other component when one of the component has an error */}
-        <ErrorBoundary>
+        {/* <ErrorBoundary>
           <ErrorHero heroName="Batman"/>
         </ErrorBoundary>
         <ErrorBoundary>
           <ErrorHero heroName="Joker"/>
-        </ErrorBoundary>
+        </ErrorBoundary> */}
         
+        <ClickCount />
+        <HoverCount />
 
       </header>
     </div>
