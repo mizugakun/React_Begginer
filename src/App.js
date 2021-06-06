@@ -33,10 +33,12 @@ import FRParentInput from './components/30_Forwarding Refs/FRParentInput';
 import PortalDemo from './components/31_Portals/PortalDemo';
 import ErrorHero from './components/32_Error Handling Phase Methods/ErrorHero';
 import ErrorBoundary from './components/32_Error Handling Phase Methods/ErrorBoundary';
-import ClickCount from './components/33_Higher Order Component/ClickCount';
-import HoverCount from './components/33_Higher Order Component/HoverCount';
-import ClickCounter02 from './components/34_HOC/ClickCounter02';
-import HoverCount02 from './components/34_HOC/HoverCount02';
+import ClickCount from './components/33_HOC part 1/ClickCount';
+import HoverCount from './components/33_HOC part 1/HoverCount';
+import ClickCounter02 from './components/34_HOC part 2/ClickCounter02';
+import HoverCount02 from './components/34_HOC part 2/HoverCount02';
+import ClickCounter03 from './components/34_HOC part 3/ClickCounter03';
+import HoverCount03 from './components/34_HOC part 3/HoverCount03';
 
 
 
@@ -127,9 +129,11 @@ function App() {
         {/* <ClickCount />
         <HoverCount /> */}
 
-        <ClickCounter02 />
-        <HoverCount02/>
+        {/* <ClickCounter02 />
+        <HoverCount02/> */}
 
+        <ClickCounter03 name={'Sam'}/>
+        <HoverCount03 name={'Sam'}/>
       </header>
     </div>
   );

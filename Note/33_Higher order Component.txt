@@ -14,3 +14,12 @@ part 2
     . the funtion name should be the functionality that will be added to the original component
     . the original component usually named as WrapedComponent, which is the component that is wraped with the HOC
     . the name of enhanced component should be the same as funciton name
+
+part 3
+. passing down the props to the wrpped component
+    . we can pass down prop to HOC, but wraped component wouldn't receive the props
+    . to achieve this, we can use the Spread Operator
+
+.passing paramters to the HOC function 
+    . modify HOC arrow function to recive more parameter
+    . pass parameter pass through wraped component
