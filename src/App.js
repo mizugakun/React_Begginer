@@ -35,6 +35,8 @@ import ErrorHero from './components/32_Error Handling Phase Methods/ErrorHero';
 import ErrorBoundary from './components/32_Error Handling Phase Methods/ErrorBoundary';
 import ClickCount from './components/33_Higher Order Component/ClickCount';
 import HoverCount from './components/33_Higher Order Component/HoverCount';
+import ClickCounter02 from './components/34_HOC/ClickCounter02';
+import HoverCount02 from './components/34_HOC/HoverCount02';
 
 
 
@@ -122,8 +124,11 @@ function App() {
           <ErrorHero heroName="Joker"/>
         </ErrorBoundary> */}
         
-        <ClickCount />
-        <HoverCount />
+        {/* <ClickCount />
+        <HoverCount /> */}
+
+        <ClickCounter02 />
+        <HoverCount02/>
 
       </header>
     </div>

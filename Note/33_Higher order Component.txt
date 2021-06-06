@@ -1,0 +1,16 @@
+part 1
+. Why do we need it? --> Reduce the duplicated codes
+
+part 2
+. what is HOC (Higher Order Component)
+
+. a pattern where a function takes a component as an argument and returns a new component
+. HOC could add additional data or functionality to teh original component
+. ex: const NewComponent = higherComponent(originalComponent)
+. ex: const EnhacncedComponent = higherComponent(originalComponent)
+. ex: IronMan = withSuit(TonyStark)
+
+. naming convention: 
+    . the funtion name should be the functionality that will be added to the original component
+    . the original component usually named as WrapedComponent, which is the component that is wraped with the HOC
+    . the name of enhanced component should be the same as funciton name
