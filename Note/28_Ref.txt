@@ -1,0 +1,12 @@
+. make it posible to oaccess DOM nodes directly whtin React
+
+three steps to use Refs:
+1. create Refs in the constructor with React.createRef ex: this.xxx = React.createRef()
+2. attach the Ref by adding "ref" attribute in DOM node ex: <h1 ref={this.xxx}></h1>
+3. operate the DOM element that Ref refernced by "this.xxx.current"
+
+four steps to use Refs by callback function:
+1. create Refs in the constructor with React.createRef ex: this.cbxxx = null
+2. create a callback function that will assign value to this.cbxxx. ex: this.setcbxxx = (ele) => {this.cbxxx = ele}
+3. attach the Ref by adding callback function as "ref" attribute in DOM node ex: <h1 ref={this.setcbxxx}></h1>
+4. operate the DOM element that Ref refernced by "this.cbxxx"

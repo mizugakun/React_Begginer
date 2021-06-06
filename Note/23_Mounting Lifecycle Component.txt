@@ -1,0 +1,23 @@
+Mounting Lifecycle Methods
+
+constructor(props)
+    . A special function tat will get called whenever a new component is created
+    . Initializing state or Building the event handler
+    . Do not caues side effecs. EX: HTTP requests
+    . super(props) must be called inside
+    . Directlt overwrite this.state
+
+static getDervicedStateFRomProps(props, state)
+    . When the state of the component depends on changes in props over time
+    . Set the state(cannot use setState() method, but can assign new object to the state)
+    . Do not caues side effecs. EX: HTTP requests
+
+render()
+    . only required method
+    . Read props & state retun JSX
+    . Do not change state ot interact with DOM or make ajax calls
+    . Children component Lifecycle methods are also executed
+
+ComponentDidMount()
+    . Invoked immediately after a component and all its children components have been rendered to the DOM
+    . Cause side effect. EX: Interact with the DOM or perform any ajax calls to load data

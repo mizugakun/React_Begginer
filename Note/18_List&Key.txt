@@ -1,0 +1,13 @@
+key prop could be anything as long as it is unique in the list
+key prop cannot be render in the child component
+do not use key prop to render any data     
+
+important:
+1. A "key" is a special string attribute you need to include when createing list of elelments.
+2. Keys give the element a stable identity
+3. Keys help react to identify which element in the list is modified, added, removed efficiently
+
+Index as Key:
+1. The item in the list do not have a unique id
+2. The list is a static list and will not change
+3. The list will never be reordered or filtered

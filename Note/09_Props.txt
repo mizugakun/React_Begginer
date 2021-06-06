@@ -1,0 +1,4 @@
+Prop
+
+Pass value to the components, and render on the browser
+Imutable: the value of a prop cannot be changed in the function; it's read only.

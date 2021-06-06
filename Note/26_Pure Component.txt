@@ -1,0 +1,31 @@
+. another way to create a class component but slightly differnent
+
+regular v.s pure component
+    . regular component
+        . a regular component doees not implment the shouldComponentUpdate method. It always return true by default.
+    . pure component
+        . a pure component on the other hand implements shouldComponentUpdate method with a "shallow props and state comparison"
+
+. shallow comparison(SC)
+    . Primitive type
+        a SC b returns true if a and b have the same value and are of the same type
+        ex: string "Sam" SC string "Sam" returns true
+    . Complex type
+        a SC b returns true if a and b refernece exact same object.
+        EX:
+            a = [1, 2, 3]
+            b = [1, 2, 3]
+            c = a
+            a === b = false
+            a === c = true
+
+. A pure component imiplements shouldComponent with a shallow prop and state comparison:
+    prevState SC currState
+    prevProps SC currProps
+        => if any one of the comparisons is differnent, return true; return fasle otherwise
+
+. prevent unnecessary re-render, boosting the performance in certain scenario
+
+. Note: if parent doesn't render, the chlid doesn't render. be careful when you choose a pure component as a parent component unless the children are pure components too.
+. Note: if using pure component to render a list of items as props oor state, don't just push the item into the list. It won't re-render since the refernce of the state and props are the same.
+. Note: never mutate the state. always return a new objeect that reflects the new state

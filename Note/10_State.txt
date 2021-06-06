@@ -1,0 +1,14 @@
+props vs state
+
+1. getting passed to the component <--> is managed within the component
+2. function parameters <--> variables declares in the function body
+3. immutable <--> can be changed
+4. props-functional Components <--> useState Hook-Functional Components
+   this.props-Class Components <--> Class Components
+
+
+
+setState:
+1. Always make use of setState and never modify the state directly
+2. if code has to be executed after teh state has been updated, place it at the call back function as the second arfument in setState method
+3. When you have to update state based on the previous state value, pass in a function as an argument instead of the regular object.

@@ -1,0 +1,2 @@
+. allows you to group a list of chilidren without adding exrta nodesto the DOM
+. it can accept key attreibute when lists of items

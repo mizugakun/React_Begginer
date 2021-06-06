@@ -1,0 +1,14 @@
+
+Component
+this.state = {
+    email: ''
+}
+
+this.emailChangeHandler = (event) => {
+    this.setState(){
+        email: event.target.value
+    }
+}
+
+App.js
+<input type='text value={this.state.value} onChange={this.emailChangeHandler}/>

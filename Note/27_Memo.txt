@@ -1,0 +1,4 @@
+. A functional component that serve the purpose same as pure component.
+
+. higher-order component
+    React.memo accept a component add something to that components and returns a new enhanced component
