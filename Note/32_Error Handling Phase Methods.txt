@@ -1,0 +1,21 @@
+Error handling phase method
+    1. static getDerivedStateFromError(error)
+    2. componentDidCatch(error, info)
+
+. React unmount the whole React component tree when the error occur
+. How to catch the error and display the UI?
+
+. Error boundaries:
+. A class component that implements either one or both of the lifecycle methods, getDerivedStateFromError or componentDidCatch, becomes an error boundary
+. Error boundaries can catch JavaScript error in their component tree, log those errors, and display a fall-back UI
+. The static getDerivedStateFromError method is used to render a fallback UI after an error is thrown
+. The componentDidCatch method is used to log the error information 
+. The placement of the Error Boundary also matters as it coontrols if the entire app should have the fall-back UI or jusdt the component causing the problem
+. Provide a way to gracefully handle error in application
+
+. the error handling phase method catch the errors:
+    . during rendering
+    . in the constructor
+
+. the error handling phase method DO NOT catch the errors:
+    . event handling

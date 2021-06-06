@@ -31,6 +31,8 @@ import Refs from './components/28_Refs/Refs';
 import FocusInput from './components/29_Ref with Class Component/FocusInput';
 import FRParentInput from './components/30_Forwarding Refs/FRParentInput';
 import PortalDemo from './components/31_Portals/PortalDemo';
+import ErrorHero from './components/32_Error Handling Phase Methods/ErrorHero';
+import ErrorBoundary from './components/32_Error Handling Phase Methods/ErrorBoundary';
 
 
 
@@ -108,7 +110,16 @@ function App() {
 
         {/* <FRParentInput /> */}
 
-        <PortalDemo />
+        {/* <PortalDemo /> */}
+        
+        { /* not a good idea to hide other component when one of the component has an error */}
+        <ErrorBoundary>
+          <ErrorHero heroName="Batman"/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <ErrorHero heroName="Joker"/>
+        </ErrorBoundary>
+        
 
       </header>
     </div>
