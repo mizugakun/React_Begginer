@@ -35,3 +35,7 @@ Steps for using context:
             . We need to specify a function between the tags of Consumer component
             . The function will take context value as parameter which can be use within the function and return as React element
 
+part 3
+. we can set the default value to the context while creating the context useing createContext method
+. context type property: another way to consume the context value
+      . 

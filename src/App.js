@@ -167,6 +167,9 @@ function App() {
         <UserProvider value="Sam">
           <ComponentC/>
         </UserProvider>
+        <br/>
+        {/* Using default value setup in createContext method */}
+        <ComponentC/>
       </header>
     </div>
   );

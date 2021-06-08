@@ -7,7 +7,7 @@ class ComponentF extends Component {
             <UserConsumer>
                 {
                     (username) => {
-                    return <div>Fomponent F. Hello {username}</div>
+                        return <div>Fomponent F. Hello {username}</div>
                     }
                 }
             </UserConsumer>
@@ -15,4 +15,27 @@ class ComponentF extends Component {
     }
 }
 
+// example for multiple contexts
+/* 
+class ComponentF extends Component {
+    render() {
+        return (
+            <ThemeContext.Consumer>
+                {theme => (
+                    <UserContext.Consumer>
+                        {username => (
+                            <ProfilePage user={username} theme={theme} />
+                        )}
+                    </UserContext.Consumer>
+                )}    
+            </ThemeContext.Consumer>
+        )
+    }
+}
+
+
+
+
+
+*/
 export default ComponentF
