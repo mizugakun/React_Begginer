@@ -1,0 +1,16 @@
+part 1
+. why there is a need for render props?
+. --> pretty much the same reason for using HOC
+
+part 2
+. In React, it is possible to use props whose value is a function to control what is actually rendered by a component
+. This is what render props pattern based on
+
+. Definition:
+. The term "render Prop" refer to a technique for sharing code between React component using a prop whose value is a function
+    1. Create a component as the container that will record the state and implement the method
+    2. The container doesn't render anything. It's gonna render whatever is passed as the "render props"
+    3. The container will pass state and implmented method as props to the render props
+    4. render prop: the component that we we'd like to render and pass state and method in
+    5. Although the state is provided by the the same container component, two different render props will have different states within
+    6. passing state and methos to children would be the better pattern

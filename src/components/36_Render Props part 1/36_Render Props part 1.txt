@@ -1,4 +1,0 @@
-. why there is a need for render props?
-. --> pretty much the same reason for using HOC
-
-

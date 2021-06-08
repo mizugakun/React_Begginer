@@ -41,8 +41,11 @@ import ClickCounter03 from './components/35_HOC part 3/ClickCounter03';
 import HoverCount03 from './components/35_HOC part 3/HoverCount03';
 import ClickCounterTwo from './components/36_Render Props part 1/ClickCounterTwo';
 import HoverCountTwo from './components/36_Render Props part 1/HoverCountTwo';
-
-
+import User from './components/37_Render Props part 2/User';
+import NewCounter from './components/37_Render Props part 2/NewCounter';
+import NewCounter_children from './components/37_Render Props part 2/NewCounter_children';
+import ClickCounterTwo02 from './components/37_Render Props part 2/ClickCounterTwo02';
+import HoverCountTwo02 from './components/37_Render Props part 2/HoverCountTwo02';
 
 function App() {
   return (
@@ -84,7 +87,7 @@ function App() {
 
         {/* <FunctionClick />
         <ClassClick /> */}
-        
+
         {/* <EventBind /> */}
 
         {/* <ParentComponent /> */}
@@ -119,7 +122,7 @@ function App() {
         {/* <FRParentInput /> */}
 
         {/* <PortalDemo /> */}
-        
+
         { /* not a good idea to hide other component when one of the component has an error */}
         {/* <ErrorBoundary>
           <ErrorHero heroName="Batman"/>
@@ -127,7 +130,7 @@ function App() {
         <ErrorBoundary>
           <ErrorHero heroName="Joker"/>
         </ErrorBoundary> */}
-        
+
         {/* <ClickCount />
         <HoverCount /> */}
 
@@ -137,8 +140,26 @@ function App() {
         {/* <ClickCounter03 name={'Sam'}/>
         <HoverCount03 name={'Sam'}/> */}
 
-        <ClickCounterTwo />
-        <HoverCountTwo />
+        {/* <ClickCounterTwo />
+        <HoverCountTwo /> */}
+
+        <User render={(isLoggedIn) => isLoggedIn ? "Sam" : "Guest"} />
+        <NewCounter render={(count, incrementCount) => (
+          <ClickCounterTwo02
+            count={count}
+            incrementCount={incrementCount}
+        />
+        )} />
+        <NewCounter_children>
+          {
+            (count, incrementCount) => (
+              <HoverCountTwo02
+                count={count}
+                incrementCount={incrementCount}
+              />
+            )
+          }
+        </NewCounter_children>
       </header>
     </div>
   );
