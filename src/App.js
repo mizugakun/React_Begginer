@@ -37,8 +37,10 @@ import ClickCount from './components/33_HOC part 1/ClickCount';
 import HoverCount from './components/33_HOC part 1/HoverCount';
 import ClickCounter02 from './components/34_HOC part 2/ClickCounter02';
 import HoverCount02 from './components/34_HOC part 2/HoverCount02';
-import ClickCounter03 from './components/34_HOC part 3/ClickCounter03';
-import HoverCount03 from './components/34_HOC part 3/HoverCount03';
+import ClickCounter03 from './components/35_HOC part 3/ClickCounter03';
+import HoverCount03 from './components/35_HOC part 3/HoverCount03';
+import ClickCounterTwo from './components/36_Render Props part 1/ClickCounterTwo';
+import HoverCountTwo from './components/36_Render Props part 1/HoverCountTwo';
 
 
 
@@ -132,8 +134,11 @@ function App() {
         {/* <ClickCounter02 />
         <HoverCount02/> */}
 
-        <ClickCounter03 name={'Sam'}/>
-        <HoverCount03 name={'Sam'}/>
+        {/* <ClickCounter03 name={'Sam'}/>
+        <HoverCount03 name={'Sam'}/> */}
+
+        <ClickCounterTwo />
+        <HoverCountTwo />
       </header>
     </div>
   );
