@@ -4,5 +4,5 @@
 . portals provide the ability to break out of this restriction
 . --> allows user to render components onto a DOM node that is not in this root component
 
-. use cases: inisert a child into different DOM to avoid messiing wiitht parent's CSS style. ex: modal
+. use cases: inisert a child into different DOM to avoid messiing with parent's CSS style. ex: modal
 . event bubbling: still propagate the event to the ancestor (parent component) no matter how DOM tree looks like
