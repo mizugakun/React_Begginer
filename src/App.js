@@ -46,6 +46,8 @@ import NewCounter from './components/37_Render Props part 2/NewCounter';
 import NewCounter_children from './components/37_Render Props part 2/NewCounter_children';
 import ClickCounterTwo02 from './components/37_Render Props part 2/ClickCounterTwo02';
 import HoverCountTwo02 from './components/37_Render Props part 2/HoverCountTwo02';
+import ComponentC from './components/38_Context part 1/ComponentC';
+import { UserProvider } from './components/38_Context part 1/UserContext';
 
 function App() {
   return (
@@ -143,7 +145,7 @@ function App() {
         {/* <ClickCounterTwo />
         <HoverCountTwo /> */}
 
-        <User render={(isLoggedIn) => isLoggedIn ? "Sam" : "Guest"} />
+        {/* <User render={(isLoggedIn) => isLoggedIn ? "Sam" : "Guest"} />
         <NewCounter render={(count, incrementCount) => (
           <ClickCounterTwo02
             count={count}
@@ -159,7 +161,12 @@ function App() {
               />
             )
           }
-        </NewCounter_children>
+        </NewCounter_children> */}
+
+        {/* The value provided by UserProvider can be consumed by every descendant component of ComponentC */}
+        <UserProvider value="Sam">
+          <ComponentC/>
+        </UserProvider>
       </header>
     </div>
   );
