@@ -7,7 +7,7 @@ constructor(props)
     . super(props) must be called inside
     . Directlt overwrite this.state
 
-static getDervicedStateFRomProps(props, state)
+static getDervicedStateFromProps(props, state)
     . When the state of the component depends on changes in props over time
     . Set the state(cannot use setState() method, but can assign new object to the state)
     . Do not caues side effecs. EX: HTTP requests

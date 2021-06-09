@@ -1,0 +1,5 @@
+. Use fake API: JSONPlaceholder
+. url: https://jsonplaceholder.typicode.com/
+
+. make the data in the response from server be props or state
+. make the request in componentDidMount methods, which only execute one time in the component lifecycle.

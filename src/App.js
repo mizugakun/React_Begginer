@@ -46,8 +46,9 @@ import NewCounter from './components/37_Render Props part 2/NewCounter';
 import NewCounter_children from './components/37_Render Props part 2/NewCounter_children';
 import ClickCounterTwo02 from './components/37_Render Props part 2/ClickCounterTwo02';
 import HoverCountTwo02 from './components/37_Render Props part 2/HoverCountTwo02';
-import ComponentC from './components/38_Context part 1/ComponentC';
-import { UserProvider } from './components/38_Context part 1/UserContext';
+import ComponentC from './components/38&39&40_Context/ComponentC';
+import { UserProvider } from './components/38&39&40_Context/UserContext';
+import PostList from './components/42_HTTP and Get request/PostList';
 
 function App() {
   return (
@@ -164,12 +165,14 @@ function App() {
         </NewCounter_children> */}
 
         {/* The value provided by UserProvider can be consumed by every descendant component of ComponentC */}
-        <UserProvider value="Sam">
+        {/* <UserProvider value="Sam">
           <ComponentC/>
         </UserProvider>
-        <br/>
+        <br/> */}
         {/* Using default value setup in createContext method */}
-        <ComponentC/>
+        {/* <ComponentC/> */}
+
+        <PostList />
       </header>
     </div>
   );
