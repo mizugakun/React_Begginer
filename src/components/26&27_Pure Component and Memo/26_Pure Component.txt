@@ -19,7 +19,7 @@ regular v.s pure component
             a === b = false
             a === c = true
 
-. A pure component imiplements shouldComponent with a shallow prop and state comparison:
+. A pure component impelements shouldComponentUpdate with a shallow prop and state comparison:
     prevState SC currState
     prevProps SC currProps
         => if any one of the comparisons is differnent, return true; return fasle otherwise
