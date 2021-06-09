@@ -49,6 +49,7 @@ import HoverCountTwo02 from './components/37_Render Props part 2/HoverCountTwo02
 import ComponentC from './components/38&39&40_Context/ComponentC';
 import { UserProvider } from './components/38&39&40_Context/UserContext';
 import PostList from './components/42_HTTP and Get request/PostList';
+import PostForm from './components/43_HTTP and Post request/PostForm';
 
 function App() {
   return (
@@ -172,7 +173,9 @@ function App() {
         {/* Using default value setup in createContext method */}
         {/* <ComponentC/> */}
 
-        <PostList />
+        {/* <PostList /> */}
+
+        <PostForm />
       </header>
     </div>
   );

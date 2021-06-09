@@ -1,0 +1,2 @@
+. store the data in the data object and send the data by post request functions
+. post request function will be the callbakck funtion of onCLick on the submit button
