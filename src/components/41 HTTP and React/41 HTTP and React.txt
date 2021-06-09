@@ -1,0 +1,7 @@
+. React is a library to build the user interface
+. There is no particular way to send/fetch the data to/from the server.
+. React application even don't know the server exist.
+. ==> How a React Application use HTTP request?
+
+. Use HTTP library: "axios"
+. command: npm install axios
