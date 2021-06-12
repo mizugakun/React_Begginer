@@ -13,7 +13,7 @@ When the component is re-render, the methood will be called because oof the chag
     . can do: compare the existing prop or state with incoming value and return true or false to tell React whether update the component or not
     . for optomizing the performance
     . should not cause any side effect. eg. HTTP requests
-    . should not call tthe setState method
+    . should not call the setState method
     . rarely used
 
 3. render()
