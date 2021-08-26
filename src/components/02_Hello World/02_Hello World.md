@@ -9,7 +9,7 @@
 
 ## Create a React app
 1. Create a folder named React
-2. Open the floder with VSCode
+2. Open the folder with VSCode
 3. In the VSCode, open the terminal and enter the command:
     `npx create-react-app <projectname>`
     This will download the a start-up project into the directory. `<projectname>` can be replaced by any name you like.
